@@ -9,7 +9,7 @@ This project provides an API for managing users and customers, with features suc
 <img width="938" alt="swag2" src="https://github.com/user-attachments/assets/519539ac-d342-42b6-8c62-f2314b37e3da" />
 <img width="945" alt="swag3" src="https://github.com/user-attachments/assets/603d9a0d-6ab9-48bf-a79f-ab579e1b74a6" />
 <img width="955" alt="swag4" src="https://github.com/user-attachments/assets/5be4ceec-3436-4a3a-ac23-390c1857befa" />
-![Uploading swag5.PNG…]()
+<img width="955" alt="swag5" src="https://github.com/user-attachments/assets/a4c39341-c8c1-4bc1-a156-be848f3c582d" />
 
 
 ## Features
