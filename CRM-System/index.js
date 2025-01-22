@@ -14,6 +14,11 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(cors({
+    origin:["http://localhost:5000", "https://backend-wisdom-puce.vercel.app"],
+    credentials: true,
+    secure: false, 
+}))
 
 app.use("/api-docs", swagger.serve, swagger.setup);
 app.use("/api/auth", authRoutes);
