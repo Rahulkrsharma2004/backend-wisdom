@@ -10,6 +10,11 @@ This project provides an API for managing users and customers, with features suc
 <img width="945" alt="swag3" src="https://github.com/user-attachments/assets/603d9a0d-6ab9-48bf-a79f-ab579e1b74a6" />
 <img width="955" alt="swag4" src="https://github.com/user-attachments/assets/5be4ceec-3436-4a3a-ac23-390c1857befa" />
 <img width="955" alt="swag5" src="https://github.com/user-attachments/assets/a4c39341-c8c1-4bc1-a156-be848f3c582d" />
+<img width="790" alt="sw1" src="https://github.com/user-attachments/assets/dc27dbd3-bf85-4c4d-bc94-fde3674b1b10" />
+<img width="790" alt="sw2" src="https://github.com/user-attachments/assets/49ead7d3-d23f-4419-b6d7-df2f49235f3b" />
+<img width="791" alt="sw3" src="https://github.com/user-attachments/assets/9afc2e4c-d246-4309-a943-866b1a758727" />
+<img width="793" alt="sw4" src="https://github.com/user-attachments/assets/1534a410-d865-42b4-abe1-844e799a884f" />
+<img width="790" alt="sw5" src="https://github.com/user-attachments/assets/e090d7b7-193f-4aee-be9d-bf8772d15c38" />
 
 
 ## Features
@@ -45,3 +50,4 @@ Follow these steps to set up the project locally:
    git clone https://github.com/Rahulkrsharma2004/backend-wisdom.git
    cd CRM-System
 
+## Swagger API - 
