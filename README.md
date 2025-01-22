@@ -50,4 +50,4 @@ Follow these steps to set up the project locally:
    git clone https://github.com/Rahulkrsharma2004/backend-wisdom.git
    cd CRM-System
 
-## Swagger API - 
+## Swagger API - https://backend-wisdom-puce.vercel.app/api-docs
