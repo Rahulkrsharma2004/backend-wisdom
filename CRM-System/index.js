@@ -22,11 +22,10 @@ app.use(cookieParser());
 //     secure: false, 
 // }))
 
-app.use(cors({
-    origin:["http://localhost:5000", "https://backend-wisdom-puce.vercel.app"],
-    methods: 'GET, POST, PUT, DELETE', 
-    allowedHeaders: 'Content-Type, Authorization',
-  }));
+app.use(cors({origin: "https://backend-wisdom-puce.vercel.app",
+    credentials: true,
+  })
+);
 
 app.use("/api-docs", swagger.serve, swagger.setup);
 app.use("/api/auth", authRoutes);
