@@ -6,7 +6,8 @@ const swaggerDefinition = {
   info: {
     title: "Customer Management API",
     version: "1.0.0",
-    description: "API for managing users and customers with features like registration, login, search, and filtering.",
+    description:
+      "API for managing users and customers with features like registration, login, search, and filtering.",
     contact: {
       name: "Rahul Kumar",
       email: "kumarrahulbasdiha@gmail.com",
@@ -16,6 +17,10 @@ const swaggerDefinition = {
     {
       url: "https://backend-wisdom-puce.vercel.app",
       description: "Vercel Deploy server",
+    },
+    {
+      url: "http://localhost:5000",
+      description: "Local server",
     },
   ],
 };
