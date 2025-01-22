@@ -14,6 +14,9 @@ app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/customers', customerRoutes);
 
+app.use('/',(req,res)=>{
+    res.send("Welcome To Customer Service Home Page !")
+})
 app.listen(PORT, () => console.log(`Server is running  port ${PORT}`));
 
 module.exports = app;
