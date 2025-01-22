@@ -22,7 +22,7 @@ app.use(cookieParser());
 //     secure: false, 
 // }))
 
-app.use(cors({origin: "https://backend-wisdom-puce.vercel.app",
+app.use(cors({origin: ["https://backend-wisdom-puce.vercel.app"],
     credentials: true,
   })
 );

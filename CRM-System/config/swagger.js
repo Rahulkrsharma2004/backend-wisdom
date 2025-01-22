@@ -14,7 +14,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "https://backend-wisdom-puce.vercel.app/",
+      url: "https://backend-wisdom-puce.vercel.app",
       description: "Vercel Deploy server",
     },
   ],
