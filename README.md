@@ -4,6 +4,14 @@
 
 This project provides an API for managing users and customers, with features such as user registration, login, customer creation, search, and filtering.
 
+## Image
+<img width="944" alt="swag1" src="https://github.com/user-attachments/assets/f09e05e0-330c-4ed0-9263-40132743db4d" />
+<img width="938" alt="swag2" src="https://github.com/user-attachments/assets/519539ac-d342-42b6-8c62-f2314b37e3da" />
+<img width="945" alt="swag3" src="https://github.com/user-attachments/assets/603d9a0d-6ab9-48bf-a79f-ab579e1b74a6" />
+<img width="955" alt="swag4" src="https://github.com/user-attachments/assets/5be4ceec-3436-4a3a-ac23-390c1857befa" />
+![Uploading swag5.PNG…]()
+
+
 ## Features
 
 - User Authentication (Register, Login, Logout)
