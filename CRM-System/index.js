@@ -6,7 +6,8 @@ const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const customerRoutes = require("./routes/customerRoutes");
 const cookieParser = require("cookie-parser");
-const swagger = require("./config/swagger");
+const swaggerSpec = require("./config/swagger");
+const path = require("path"); // Import the path module
 
 dotenv.config();
 connectDB();
@@ -16,18 +17,18 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-// app.use(cors({
-//     origin: "http://localhost:3000",
-//     credentials: true,
-//     secure: false, 
-// }))
+// Serve Swagger UI assets
+app.use('/api-docs', express.static(path.join(__dirname, 'node_modules/swagger-ui-dist')));
+app.get('/api-docs', (req, res) => {
+  res.sendFile(path.join(__dirname, 'node_modules/swagger-ui-dist/index.html'));
+});
 
-app.use(cors({origin: ["https://backend-wisdom-puce.vercel.app"],
-    credentials: true,
-  })
-);
+// Provide Swagger JSON
+app.get('/swagger.json', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(swaggerSpec);
+});
 
-app.use("/api-docs", swagger.serve, swagger.setup);
 app.use("/api/auth", authRoutes);
 app.use("/api/customers", customerRoutes);
 
