@@ -36,13 +36,21 @@ exports.createCustomer = async (req, res) => {
 
 exports.getCustomers = async (req, res) => {
   try {
-    const { name, email, phone, company } = req.query;
+    const { name, email, phone, company, search } = req.query;
     const filters = { user: req.user.id };
 
     if (name) filters.name = new RegExp(name, "i");
     if (email) filters.email = new RegExp(email, "i");
     if (phone) filters.phone = phone;
     if (company) filters.company = company;
+
+    if (search) {
+      filters.$or = [
+        { name: new RegExp(search, "i") },
+        { email: new RegExp(search, "i") },
+        { phone: new RegExp(search, "i") },
+      ];
+    }
 
     const customers = await Customer.find(filters);
     res

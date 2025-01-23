@@ -69,6 +69,11 @@ router.post('/create', createCustomer);
  *         schema:
  *           type: string
  *         description: Filter customers by associated company.
+ *       - in: query
+ *         name: search
+ *         schema:
+ *           type: string
+ *         description: Search customers by name, email, or phone (case-insensitive).
  *     responses:
  *       200:
  *         description: A list of customers.
@@ -87,7 +92,7 @@ router.get('/', getCustomers);
  *     tags:
  *       - Customers
  *     security:
- *       - bearerAuth: []
+ *       - bearerAuth: []   
  *     parameters:
  *       - in: path
  *         name: id
